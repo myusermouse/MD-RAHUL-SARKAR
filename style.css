@@ -34,6 +34,7 @@ header{
     justify-content: space-between;
     position: fixed;
     box-shadow: 0 1px 1px  var(--button-shadow);
+    position: relative;
 }
 .h-left .mylogo{
     width: 30px;
@@ -58,9 +59,19 @@ header{
     position: absolute;
     bottom: 0;
     left: 3px;
-    max-width: 100%;
+    max-width: 60px;
     transition: 0.3s linear;
 }
 .h-right a:hover::before{
     width: 100%;
+}
+header .toggle{
+    position: absolute;
+    top: 37px;
+    right: 8px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    box-shadow: 0 2px 2px var(--button-shadow);
 }
