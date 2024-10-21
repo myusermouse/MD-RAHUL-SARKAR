@@ -31,9 +31,36 @@ header{
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     position: fixed;
+    box-shadow: 0 1px 1px  var(--button-shadow);
 }
-header .h-left .mylogo{
-    width: 40px;
+.h-left .mylogo{
+    width: 30px;
+    padding-top: 3px;
+    padding-left: 3px;
+}
+
+.h-right a{
+    margin-right: 10px;
+    float: left;
+    text-decoration: none;
+    color: var(--primary-color);
+    padding-bottom: 2px;
+    padding: 7px;
+    position: relative;
+}
+.h-right a:before{
+    content: "";
+    width: 0px;
+    height: 2px;
+    background: var(--primary-maincolor);
+    position: absolute;
+    bottom: 0;
+    left: 3px;
+    max-width: 100%;
+    transition: 0.3s linear;
+}
+.h-right a:hover::before{
+    width: 100%;
 }
